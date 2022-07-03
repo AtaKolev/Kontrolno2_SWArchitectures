@@ -1,7 +1,6 @@
 from flask import Flask, redirect, request, render_template, flash, url_for
 import logging
 from logging.handlers import RotatingFileHandler
-from isort import file
 import pandas as pd
 pd.set_option('display.float_format', '{:.3f}'.format)
 from load_the_model import load_model
