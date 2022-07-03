@@ -2,7 +2,7 @@
 """
 Created on Mon Jun 27 20:55:56 2022
 
-@author: atana
+@author: Atanas Kolev
 """
 
 import torch

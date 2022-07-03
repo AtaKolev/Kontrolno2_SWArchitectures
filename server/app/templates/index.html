@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="container">
+        <h1>Photo Classification</h1>
+        <h5>Upload a photo of a fruit and receive an answer from the Neural Network</h5>
+    </br><hr></br>
+
+    <small>
+    <b>Current state:</b> {{auto_approve_all | safe}} <br>
+        <form method="POST" action="/home">
+            <b style="color:black">Change to:</b>
+            <select name="mycheckbox">
+                <option value="0">OFF (use ML model to decide)</option>
+                <option value="1">ON (auto-approve all)</option>
+              </select>
+              <br/>
+              <b>Password</b>: <input type="password" name="mycheckbox"><br/>
+            <input type="submit" value="Submit">
+        </form>
+        </small>
+        {{form_responce | safe}}
+    </div>
+
+    </br></br><hr></br>
+{% endblock %}
